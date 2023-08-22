@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sp_signup_fragment_one"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_sp_fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/ColorAccentOrange">
+
+                <EditText
+                    android:id="@+id/ed_signup_sp_fname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="16dp"
+                    android:drawableLeft="@drawable/person"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/white"
+                    android:hint="  Enter First Name"
+                    android:inputType="text"
+                    android:textColor="@android:color/white"
+                    android:textCursorDrawable="@color/white"
+                    android:theme="@style/ColorAccentOrange"
+                    android:backgroundTint="@android:color/white"
+                    android:textColorHint="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_sp_mname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/ColorAccentOrange">
+
+                <EditText
+                    android:id="@+id/ed_signup_sp_mname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="16dp"
+                    android:drawableLeft="@drawable/person"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/white"
+                    android:hint="  Enter Midle Name"
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/white"
+                    android:textCursorDrawable="@color/white"
+                    android:theme="@style/ColorAccentOrange"
+                    android:backgroundTint="@android:color/white"
+                    android:textColorHint="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_sp_lname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/ColorAccentOrange">
+
+                <EditText
+                    android:id="@+id/ed_signup_sp_lname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="16dp"
+                    android:drawableLeft="@drawable/person"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/white"
+                    android:hint="  Enter Last Name"
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/white"
+                    android:textCursorDrawable="@color/white"
+                    android:theme="@style/ColorAccentOrange"
+                    android:backgroundTint="@android:color/white"
+                    android:textColorHint="@color/white"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_next_sp_sign_fragment_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/roundbuttonstyle"
+                android:text="@string/next"
+                android:textColor="@android:color/white"
+                android:textSize="15dp" />
+
+</LinearLayout>

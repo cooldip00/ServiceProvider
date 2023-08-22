@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sp_signup_fragment_three"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout_sp_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ColorAccentOrange">
+
+        <EditText
+            android:id="@+id/ed_signup_sp_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@android:color/white"
+            android:drawableLeft="@drawable/address"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/white"
+            android:hint="  Enter Address"
+            android:inputType="textPostalAddress"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@color/white"
+            android:theme="@style/ColorAccentOrange" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/spinner_signup_sp_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:drawSelectorOnTop="true"
+        android:outlineProvider="bounds" />
+
+    <Spinner
+        android:id="@+id/spinner_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:drawSelectorOnTop="true"
+        android:entries="@array/gender_selection"
+        android:outlineProvider="bounds" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_back_sp_sign_fragment_three"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/rounddefaultbutton"
+            android:text="Back"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btn_next_sp_sign_fragment_three"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/roundbuttonstyle"
+            android:text="register"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+    </LinearLayout>
+</LinearLayout>

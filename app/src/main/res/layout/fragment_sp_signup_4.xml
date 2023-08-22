@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sp_signup_fragment_four"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ColorAccentOrange">
+
+        <Button
+            android:id="@+id/btn_userImage_sp_sign_fragment_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundbuttonstyle"
+            android:drawableLeft="@drawable/person"
+            android:drawableTint="@android:color/white"
+            android:text="Upload Image"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginStart="60dp"
+            android:drawablePadding="-10dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/img_userImage_sp_sign_fragment_four"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/default_image"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_back_sp_sign_fragment_four"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/rounddefaultbutton"
+            android:text="Back"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+        <Button
+            android:id="@+id/btn_next_sp_sign_fragment_four"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/roundbuttonstyle"
+            android:text="Next"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+    </LinearLayout>
+</LinearLayout>

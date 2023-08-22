@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sp_fragment_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:id="@+id/rellay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grad"
+        android:paddingBottom="20dp">
+
+        <RelativeLayout
+            android:id="@+id/imgSP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/circle_border">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/sp_change_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="9dp"
+                android:padding="3dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/saloon" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/sp_profile_change_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignEnd="@+id/imgSP"
+            android:layout_alignBottom="@+id/imgSP"
+            android:adjustViewBounds="true"
+            android:background="?attr/selectableItemBackground"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_photo_camera_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgSP"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5sp"
+            android:fontFamily="sans-serif-light"
+            android:text="Change Profile"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rellay1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="First Name"
+                        android:textColor="@color/headings"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/sp_fname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="16dp"
+                        android:backgroundTint="@color/success"
+                        android:hint="  Enter The First Name"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/black"
+                        android:textCursorDrawable="@color/success" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/grey" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Middle Name"
+                        android:textColor="@color/headings"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/sp_mname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="16dp"
+                        android:backgroundTint="@color/success"
+                        android:hint="  Enter The Middle Name"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/black"
+                        android:textCursorDrawable="@color/success" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/grey" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last Name"
+                        android:textColor="@color/headings"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/sp_lname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="16dp"
+                        android:backgroundTint="@color/success"
+                        android:hint="  Enter The Last Name"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/black"
+                        android:textCursorDrawable="@color/success" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/grey" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address"
+                        android:textColor="@color/headings"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/sp_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="16dp"
+                        android:backgroundTint="@color/success"
+                        android:hint="  Enter The Address"
+                        android:inputType="textImeMultiLine"
+                        android:lines="3"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/black"
+                        android:textCursorDrawable="@color/success" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/grey" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:textColor="@color/headings"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/sp_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:fontFamily="sans-serif-light"
+                        android:text="joshijignesh50@gmail.com"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/grey" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone"
+                        android:textColor="@color/headings"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/sp_contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:fontFamily="sans-serif-light"
+                        android:text="+91 9909366341"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/grey" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_sp_change_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/success"
+                        android:text="SUBMIT"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/grey" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

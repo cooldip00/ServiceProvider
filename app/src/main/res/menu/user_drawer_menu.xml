@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    android:checkableBehavior="single">
+
+    <group >
+        <item
+            android:id="@+id/nav_user_switch_to_ar"
+            android:icon="@drawable/ic_switch_ar"
+            android:title="Switch To AR" />
+        <item
+            android:id="@+id/nav_user_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_user_profile"
+            android:icon="@drawable/ic_user"
+            android:title="Edit Profile" />
+        <item
+            android:id="@+id/nav_user_services"
+            android:icon="@drawable/ic_service"
+            android:title="Services" />
+
+        <item
+            android:id="@+id/nav_user_request_list"
+            android:icon="@drawable/ic_adjust"
+            android:title="Request List" />
+        <item
+            android:id="@+id/nav_user_history"
+            android:icon="@drawable/ic_history"
+            android:title="History" />
+        <item
+            android:id="@+id/nav_user_setting"
+            android:icon="@drawable/ic_setting"
+            android:title="Setting" />
+    </group>
+    <item
+        android:iconTint="@color/white"
+        android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_user_share"
+                android:icon="@drawable/ic_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_user_about"
+                android:icon="@drawable/ic_help"
+                android:title="About Us" />
+            <item
+                android:id="@+id/nav_user_contact"
+                android:icon="@drawable/ic_contact_us"
+                android:title="Contact Us" />
+        </menu>
+    </item>
+</menu>

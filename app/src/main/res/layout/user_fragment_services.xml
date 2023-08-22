@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#F0F0F0"
+    android:fitsSystemWindows="true">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/service_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

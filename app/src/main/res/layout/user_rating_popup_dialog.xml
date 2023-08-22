@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ratting"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"/>
+    <RatingBar
+        android:id="@+id/user_rating_popup_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:rating="3.0"
+        android:layout_marginStart="16dp"
+        android:theme="@style/RatingBar"
+        android:paddingBottom="16dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/user_rating_popup_textInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/success">
+
+        <EditText
+            android:id="@+id/user_rating_popup_eidttext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:hint="Enter Any Comment"/>
+        <requestFocus />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</LinearLayout>
